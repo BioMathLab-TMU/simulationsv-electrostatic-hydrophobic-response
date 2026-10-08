@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "validation_date": "2026-10-08",
+  "python": "3.12.5",
+  "dependencies": {
+    "numpy": "2.5.3",
+    "pandas": "2.2.3",
+    "scipy": "1.18.1",
+    "h5py": "3.16.0",
+    "pyarrow": "19.0.1",
+    "matplotlib": "3.10.0"
+  },
+  "raw_data_reanalysis": {
+    "runs": 12,
+    "tables": [
+      {
+        "file": "run_endpoints.csv",
+        "rows": 12,
+        "columns": 13,
+        "comparison": "all cells, same order, numeric rtol=atol=1e-12"
+      },
+      {
+        "file": "condition_summary.csv",
+        "rows": 12,
+        "columns": 9,
+        "comparison": "all cells, same order, numeric rtol=atol=1e-12"
+      },
+      {
+        "file": "paired_contrasts.csv",
+        "rows": 15,
+        "columns": 12,
+        "comparison": "all cells, same order, numeric rtol=atol=1e-12"
+      },
+      {
+        "file": "frame_metrics.csv",
+        "rows": 2400,
+        "columns": 37,
+        "comparison": "all cells, same order, numeric rtol=atol=1e-12"
+      },
+      {
+        "file": "shell_sensitivity.csv",
+        "rows": 9600,
+        "columns": 20,
+        "comparison": "all cells, same order, numeric rtol=atol=1e-12"
+      },
+      {
+        "file": "run_inventory.csv",
+        "rows": 12,
+        "columns": 5,
+        "comparison": "all cells, same order, numeric rtol=atol=1e-12"
+      }
+    ],
+    "status": "passed"
+  },
+  "simulator_compile": {
+    "platform": "Ubuntu/WSL",
+    "compiler": "GNU C++ 13.3.0",
+    "configuration": "Release",
+    "parallel_jobs": 2,
+    "status": "passed"
+  },
+  "unit_and_integrity_tests": {
+    "tests": 9,
+    "status": "passed"
+  },
+  "portable_artifact_generation": {
+    "figure_sets": 4,
+    "formats": [
+      "PDF",
+      "PNG",
+      "TIFF"
+    ],
+    "fallback_font_tested": "DejaVu Sans",
+    "supporting_numerical_inputs": 19,
+    "requires_private_manuscript_checkout": false,
+    "status": "passed"
+  },
+  "source_snapshot_hashes_verified": 25,
+  "prior_data_and_figure_hashes_verified": 56,
+  "privacy_scan": {
+    "text_and_hdf5_metadata": true,
+    "blocking_findings": 0
+  },
+  "scope": "Reproduction of released finite-time model outputs; no new physical simulations or LLPS claim."
+}

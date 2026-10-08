@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "shell_nm": 2,
+  "late_frames": 60,
+  "analysis_status": "post_hoc_descriptive",
+  "n_runs": 12,
+  "n_seed_blocks": 3,
+  "primary_interaction_by_seed": {
+    "9310002": 0.35904334828101636,
+    "9310003": 0.31323700381996344,
+    "9310004": 0.4445025743232022
+  },
+  "primary_interaction_mean": 0.3722609754747273,
+  "tests": {
+    "toy_and_random_bruteforce": "passed",
+    "first_last_frame_bruteforce_each_run": "passed",
+    "all_12_primary_endpoint_reconciliations": "passed",
+    "trajectory_hashes": "passed"
+  },
+  "interpretation": "Snapshot proximity is not a biochemical bond, bridge lifetime or pair-class causal ablation.",
+  "inputs": [
+    {
+      "run_id": "article_force_confirmatory_C30_E1_H1_seed_9310002",
+      "sha256": "dc7a1449e25de25a0d87052f642b5e2e7f9c8a7757fb54d19ca57714ca33d837",
+      "frames": 200
+    },
+    {
+      "run_id": "article_force_confirmatory_C30_E1_H0_seed_9310002",
+      "sha256": "fc183d297d64302ebbeb256cae307c2e6b53fede455d3b973d2704f96a3c9322",
+      "frames": 200
+    },
+    {
+      "run_id": "article_force_confirmatory_C30_E0_H1_seed_9310002",
+      "sha256": "51a2f0666b9c56d347468bea6b0d5fb45e36c4bd6afa32a5927f59f2b4749386",
+      "frames": 200
+    },
+    {
+      "run_id": "article_force_confirmatory_C30_E0_H0_seed_9310002",
+      "sha256": "301e97b7764db43201e7ab2da1dd20775dbb666679859b745a6deca424068b8f",
+      "frames": 200
+    },
+    {
+      "run_id": "article_force_confirmatory_C30_E1_H1_seed_9310003",
+      "sha256": "86bcaee0b7cff6d2e13f7674fb10dd5e519b1f5ee8a0c76c525f5b1411bb970e",
+      "frames": 200
+    },
+    {
+      "run_id": "article_force_confirmatory_C30_E1_H0_seed_9310003",
+      "sha256": "3469e33d2f87277a02192bbb0ee978259569df3c592846ca9719785622351e95",
+      "frames": 200
+    },
+    {
+      "run_id": "article_force_confirmatory_C30_E0_H1_seed_9310003",
+      "sha256": "3d551bc7a2cf35d70ba698727176975944906e463da12171ff354ec39a60c7bd",
+      "frames": 200
+    },
+    {
+      "run_id": "article_force_confirmatory_C30_E0_H0_seed_9310003",
+      "sha256": "a33b2110c1f3c1934f02d28f7e89c324d9a3a24c860a183bcc4f9b8f1986755a",
+      "frames": 200
+    },
+    {
+      "run_id": "article_force_confirmatory_C30_E1_H1_seed_9310004",
+      "sha256": "807d002a18844015c9b81c25f4b2f3e75d723566bd206169d8d0fe99215495d1",
+      "frames": 200
+    },
+    {
+      "run_id": "article_force_confirmatory_C30_E1_H0_seed_9310004",
+      "sha256": "26079e777b9024689c8bfc41ca87f3e0399f79cd3966dd528283d8077ebe174d",
+      "frames": 200
+    },
+    {
+      "run_id": "article_force_confirmatory_C30_E0_H1_seed_9310004",
+      "sha256": "c27fc18e23472bd25b8ca130376688b74e2b48fd4c0c6f994a3bb192dbbb7000",
+      "frames": 200
+    },
+    {
+      "run_id": "article_force_confirmatory_C30_E0_H0_seed_9310004",
+      "sha256": "f9e8d181a57a8d568680ccb2cd7680ddb53306752011f7820e0ed714baaeccf3",
+      "frames": 200
+    }
+  ]
+}

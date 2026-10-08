@@ -1,0 +1,24 @@
+# Only generated outputs and local machine state are ignored.
+/build/
+/builds/
+/results/
+/logs/
+/data/external/downloads/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.vscode/
+.git_status_porcelain.tmp
+*.tmp
+*.log
+
+# Rebuildable LaTeX auxiliaries; manuscript PDF and sources remain tracked.
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.blg
+__pycache__/

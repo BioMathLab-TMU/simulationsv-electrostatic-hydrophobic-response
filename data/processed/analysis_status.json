@@ -1,0 +1,9 @@
+{
+  "planned_runs": 12,
+  "included_runs": 12,
+  "confirmatory_inference_ready": true,
+  "independent_unit": "seed/run",
+  "primary_shell_nm": 2,
+  "late_fraction": 0.3,
+  "scope": "finite-time model organization; not thermodynamic LLPS"
+}

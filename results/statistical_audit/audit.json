@@ -1,0 +1,7 @@
+{
+  "published_contrast_checks": 15,
+  "absolute_tolerance": 1e-12,
+  "replicate": "complete run / seed block",
+  "caution": "Three blocks; HC3 is approximate, not cluster-robust; no nonparametric p<0.25 is possible here.",
+  "multiplicity": "Holm within each outcome and contrast family; factorial terms within outcome"
+}

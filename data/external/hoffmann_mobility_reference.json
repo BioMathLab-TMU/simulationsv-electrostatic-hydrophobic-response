@@ -1,0 +1,12 @@
+{
+  "article_doi": "10.1038/s41467-023-42372-6",
+  "source_data_doi": "10.6084/m9.figshare.24179445.v1",
+  "figure": "2h",
+  "metric": "short_time_diffusion_D3ms",
+  "unit": "um^2/s",
+  "extraction": "Numerical scale-reference values from the released source-data workbook; no uncertainty reconstructed."
+  ,"with_SV": {"mean": 0.0189192370469475, "median": 0.0032468654818007},
+  "without_SV": {"mean": 0.025309037742838946, "median": 0.007553879446069625},
+  "limitations": ["Reconstituted condensate-core tracks, not all model Syn agents", "Experimental cadence 1 ms versus saved model cadence 0.14 ms", "All model arms contain SVs; presence/absence perturbation is not reproduced", "Effective model friction was previously literature-informed"],
+  "license": "Original source provider terms; not relicensed by this package."
+}

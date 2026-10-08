@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "description": "Comment-cleaned source snapshot used for the confirmatory simulations",
+  "sources": [
+    {
+      "file": "main.cpp",
+      "original_sha256": "9b04f840bbbb7f496f21eef4ac1bed0d9adfb046d816399a366ca9302e1406b2",
+      "publication_sha256": "f232199070d6c4757d494445f825e8abf3602e7f679118317c46411615463ca5"
+    },
+    {
+      "file": "Environment.cpp",
+      "original_sha256": "c00b6015f9ec60038826dac9ef9ac92377eb7dae44cdfafb3f5bd75a41362474",
+      "publication_sha256": "7e771317a6544d0ac0c7a98f7e32e426764ca631d2c5173d20ad495f9c44609b"
+    },
+    {
+      "file": "Environment.h",
+      "original_sha256": "e8e657e2b1a25da973284e3d8f18603c19f73fc73bd8ba77cafd418dc9782bfe",
+      "publication_sha256": "c44ce0082ff02f1804afe8c5ea63a322eaa48e9fd2dd597fc2d9224a0a3cebb0"
+    },
+    {
+      "file": "MyUtility.cpp",
+      "original_sha256": "299820e001ab4e5a98f6aa5cbae599165822c889224e01fd2eee52e31b4ecdbc",
+      "publication_sha256": "6f50da8b6d7af8d574e9bfde989b888e10f54a179ce18913aa838f26191dfb91"
+    },
+    {
+      "file": "MyUtility.h",
+      "original_sha256": "34b92a383aa42cc740a2f5576004bac2cfc73f1e5d2b4e8135dc4b5c8746f857",
+      "publication_sha256": "a2146638fbcdc7158b4b2ace72cab1d1b3884f10a390b77d139c3bdc6331a347"
+    },
+    {
+      "file": "DiscreteAgent.cpp",
+      "original_sha256": "3bc9075e617f4ffb1bef49a812f5d9d8f7baf71ae6e05b9bdc3d31b00b7843b1",
+      "publication_sha256": "f88cf63c0be0c83303c189b864816bfde0721a78ad8b16007a74eb47da7aa689"
+    },
+    {
+      "file": "DiscreteAgent.h",
+      "original_sha256": "b49f1280cd2a1dbca7df9638a9a55dab10020199456ac0ec828ba86f01a09c12",
+      "publication_sha256": "d78006a2ee812a169cd7a4fc1769ff8e744ade1c3411573f4c457b299beadcd8"
+    },
+    {
+      "file": "Vesicles.cpp",
+      "original_sha256": "8c2f1a63dabd3bfe0fe9a847f42bdfdc68392016b3feb2cb17749675339a90a6",
+      "publication_sha256": "2766d8f1c57a8d9ba3676cc968146e7c4c0ae5b6b4228a7500d1bd09a5597ae7"
+    },
+    {
+      "file": "Vesicles.h",
+      "original_sha256": "db8e078396df94e90ba42625e44841a67e98ba25050d9959e6c6f0a72f8ea9e3",
+      "publication_sha256": "8a9a9994205de8afdfcaaad53f404921d4c9bb27eab97e9a0bd794c85d6d8b1a"
+    },
+    {
+      "file": "ProjectManager.cpp",
+      "original_sha256": "25ea790d39efa51979586224b1189281d11f642105e1bcc9eca3613084c277b1",
+      "publication_sha256": "3f80882f0f4427d08cb4a0bb7357e8ee897f3750b3c344ccae7629090040ba06"
+    },
+    {
+      "file": "ProjectManager.h",
+      "original_sha256": "38fcd672a6aee1cde5eccba27459034a17a2ff64756f160105c0fe32be659c16",
+      "publication_sha256": "052685a97ff03ffdab59e49eab4bb1fba5ea009039b3ffadcf2aa52f26a7dae5"
+    },
+    {
+      "file": "Synapsin.cpp",
+      "original_sha256": "014bae7e36c457846fe63a3a35f6f44497d59653ac25ab8c597c04b5c308338a",
+      "publication_sha256": "0f90aab1ba191f0379ce041ba3e49def3b72019d7b48ac59164e27f0e186826a"
+    },
+    {
+      "file": "Synapsin.h",
+      "original_sha256": "579a94ed13ac06acdf1d7cdea8e92647a69d08ca64e8c1a81087ffb30dacbee1",
+      "publication_sha256": "1783b042301590fdf717f2759364e86a1e962be67d680160cc2491b18f26d450"
+    },
+    {
+      "file": "GP.cpp",
+      "original_sha256": "f8401794ded91a5e023ad0647f8b9c12432ceed03271812a6e5fca4c50348437",
+      "publication_sha256": "8812d6f2731b4965976ae9414e699d7d08babfd40a0147fa78a0417573d6a9f6"
+    },
+    {
+      "file": "GP.h",
+      "original_sha256": "565962dd67121e865c0818148a8230f41084223e14f60331f690cc102b8dea7e",
+      "publication_sha256": "a3d358bae399bb126b2df84b5319babf6d3ad2140a0cd0653a4e74fff4b9ed89"
+    },
+    {
+      "file": "Interaction.cpp",
+      "original_sha256": "8011440f6e1745e0aa470d9593465b65a5fa9451035030dd69b0b495b352ef0c",
+      "publication_sha256": "37b89d66b5c81b04d50c680bf2b257ad4ce84db72cba14f9b5ee00cede7dcbba"
+    },
+    {
+      "file": "Interaction.h",
+      "original_sha256": "d9f4d81740adab5f11f55b8edb7d3b1b17fd34299cc9a933b7bd2c1e749f0fa3",
+      "publication_sha256": "7401369e094615d59edaeb8b3ddc217f6334ae98a01a5b9b93c949e675e3ef79"
+    },
+    {
+      "file": "Converter.cpp",
+      "original_sha256": "c3b51e0c6aa80c5650ba7e1bd8c894b879aa3a7c5ac3cd95f2cf630ee2d1ba35",
+      "publication_sha256": "ff0e8f6f3a2e0bac584a369a43133cec5adf5b936426f116254598a00293cb5d"
+    },
+    {
+      "file": "Converter.h",
+      "original_sha256": "dcebfa3ada4aee0a8e1767e200d8867eb94d3c0992b639c4735e2b4aad6acef1",
+      "publication_sha256": "186403ba8865bb6e9c6419bef608714388ee30e30414a2896a26ebc40276b41a"
+    },
+    {
+      "file": "Saver.cpp",
+      "original_sha256": "6bf28f9759cfc1dd846907242c5ef443f8e7817630c8ecd3e9ba6dbe718030bb",
+      "publication_sha256": "978b7287391aa11a6a46de8b1d195b79b76ebeab8b581a137db9a3dcffd2229b"
+    },
+    {
+      "file": "Saver.h",
+      "original_sha256": "7ceca844e6971a9efb375dc8f74c04e5c2ad93af9de7e2ed388b49e1ae4a2b07",
+      "publication_sha256": "0c95dcba96a6c8a06f840c919430958d037bc30951bec7169e4bce646ac7b472"
+    },
+    {
+      "file": "GF.cpp",
+      "original_sha256": "441de0aee647510c44ca9bc4b991bf648be99fa41c04258924f8bfe37afda1ba",
+      "publication_sha256": "1160cad6836d7b96fae84aec300eb244e0dac93eeabf47da45a1cd2a9906ecac"
+    },
+    {
+      "file": "GF.h",
+      "original_sha256": "497e6b15bc515c15af59ffad3a6e4ac2dadc960054e120a3e70d0dfed3b66373",
+      "publication_sha256": "bbbc1f8f5f2ac360e92174c2f7ad01a769142d64b42970abb40e64a0ca08b12e"
+    },
+    {
+      "file": "ProjectionNeighborhood.h",
+      "original_sha256": "20bbab6c9c219f4112e8b5789adbaf1276c623cbf1ef733ad2ec50ab6c90177d",
+      "publication_sha256": "3a48f828d086a83e4bcafe6306117b9c50429a6932f21d2aa303a166c0dd9f72"
+    },
+    {
+      "file": "Srock2Coefficients.h",
+      "original_sha256": "8dd1f110773cc7a30afd6ffb791d75f048566729b118acca0660f3b51d2b0616",
+      "publication_sha256": "3ac17dfae2e295b0350409b6dcd1e99235ee7991d55aa5b337c6c00718507fa2"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "minimum_independent_seeds_per_condition": 3,
+  "exploratory_pilot_excluded_from_confirmatory_inference": true,
+  "analysis_question": "Distinct and cooperative electrostatic and hydrophobic contributions to finite-time synapsin-vesicle organization at 30 uM",
+  "independent_unit": "one completed simulation run / seed",
+  "paired_block": "the same seed is used once in each of the four E/H arms",
+  "primary_endpoint": "late_mean_largest_component_fraction",
+  "primary_analysis_shell_nm": 2.0,
+  "secondary_endpoints": [
+    "late_mean_synapsin_recruited_fraction",
+    "late_mean_largest_component_vesicle_fraction"
+  ],
+  "sensitivity_shells_nm": [
+    0.0,
+    4.0,
+    6.0
+  ],
+  "claim_boundary": "fixed-horizon finite-time assembly kinetics and structural organization; no equilibrium or standalone thermodynamic LLPS claim",
+  "fixed_parameters": {
+    "volume_um3": 0.1,
+    "vesicle_count": 200,
+    "vesicle_core_radius_std_nm": 2.5,
+    "dt_ms": 0.0007,
+    "dynamic_steps": 40000,
+    "saved_frame_interval_steps": 200,
+    "neighbor_depth_cells": 2,
+    "van_der_waals_enabled": true
+  },
+  "confirmatory_seeds": [
+    9310002,
+    9310003,
+    9310004
+  ],
+  "status": "12_completed; numerical_and_saved_state_QC_passed",
+  "runs": [
+    {
+      "run_id": "article_force_confirmatory_C30_E1_H1_seed_9310002",
+      "config_sha256": "8b1ef8f5654f76931c51eedd2b2230e807a99ec96d36747c3543b849d17073ea",
+      "electrostatic_enabled": true,
+      "hydrophobic_enabled": true,
+      "van_der_waals_enabled": true,
+      "seed": 9310002,
+      "config": "configs/runs/article_force_confirmatory_C30_E1_H1_seed_9310002.json"
+    },
+    {
+      "run_id": "article_force_confirmatory_C30_E1_H0_seed_9310002",
+      "config_sha256": "e029a0127e7571226f516b45497f8e6f2e01dfbd7773264a90c698f5f24391d2",
+      "electrostatic_enabled": true,
+      "hydrophobic_enabled": false,
+      "van_der_waals_enabled": true,
+      "seed": 9310002,
+      "config": "configs/runs/article_force_confirmatory_C30_E1_H0_seed_9310002.json"
+    },
+    {
+      "run_id": "article_force_confirmatory_C30_E0_H1_seed_9310002",
+      "config_sha256": "5203d058a02001d8f4455a916f76b8203687f3b0187234568341800a410652c0",
+      "electrostatic_enabled": false,
+      "hydrophobic_enabled": true,
+      "van_der_waals_enabled": true,
+      "seed": 9310002,
+      "config": "configs/runs/article_force_confirmatory_C30_E0_H1_seed_9310002.json"
+    },
+    {
+      "run_id": "article_force_confirmatory_C30_E0_H0_seed_9310002",
+      "config_sha256": "0ebb21d0b7674af3b099049b4b1ab8be3e9f777a8696b363cd915d9df4b4ba18",
+      "electrostatic_enabled": false,
+      "hydrophobic_enabled": false,
+      "van_der_waals_enabled": true,
+      "seed": 9310002,
+      "config": "configs/runs/article_force_confirmatory_C30_E0_H0_seed_9310002.json"
+    },
+    {
+      "run_id": "article_force_confirmatory_C30_E1_H1_seed_9310003",
+      "config_sha256": "5b59eab95a96f6a36456aa5da0d0dd425daa40333ee2f0080d8460a2ceef2e3d",
+      "electrostatic_enabled": true,
+      "hydrophobic_enabled": true,
+      "van_der_waals_enabled": true,
+      "seed": 9310003,
+      "config": "configs/runs/article_force_confirmatory_C30_E1_H1_seed_9310003.json"
+    },
+    {
+      "run_id": "article_force_confirmatory_C30_E1_H0_seed_9310003",
+      "config_sha256": "10dcd551529f2fc3a864ec19cf8d8e75c0108dcd6f9040c49df5bd2501217a3b",
+      "electrostatic_enabled": true,
+      "hydrophobic_enabled": false,
+      "van_der_waals_enabled": true,
+      "seed": 9310003,
+      "config": "configs/runs/article_force_confirmatory_C30_E1_H0_seed_9310003.json"
+    },
+    {
+      "run_id": "article_force_confirmatory_C30_E0_H1_seed_9310003",
+      "config_sha256": "e11543ab1d83ac6da00880d1773d42d2fe4272f497ba13baca5289425b13d1dc",
+      "electrostatic_enabled": false,
+      "hydrophobic_enabled": true,
+      "van_der_waals_enabled": true,
+      "seed": 9310003,
+      "config": "configs/runs/article_force_confirmatory_C30_E0_H1_seed_9310003.json"
+    },
+    {
+      "run_id": "article_force_confirmatory_C30_E0_H0_seed_9310003",
+      "config_sha256": "a27a227c1980708cf2eb828d5eab3026231f567f0b0a4efe4144085bf277516e",
+      "electrostatic_enabled": false,
+      "hydrophobic_enabled": false,
+      "van_der_waals_enabled": true,
+      "seed": 9310003,
+      "config": "configs/runs/article_force_confirmatory_C30_E0_H0_seed_9310003.json"
+    },
+    {
+      "run_id": "article_force_confirmatory_C30_E1_H1_seed_9310004",
+      "config_sha256": "87ca2686a529a7a397287e4c8b8943b7c529c61a9a6f7a3fca11ec6641815d3c",
+      "electrostatic_enabled": true,
+      "hydrophobic_enabled": true,
+      "van_der_waals_enabled": true,
+      "seed": 9310004,
+      "config": "configs/runs/article_force_confirmatory_C30_E1_H1_seed_9310004.json"
+    },
+    {
+      "run_id": "article_force_confirmatory_C30_E1_H0_seed_9310004",
+      "config_sha256": "e1cc0dd7e9fe5abc22d87ab0dfc8838f0d1e9be17d711b174bac978da9290956",
+      "electrostatic_enabled": true,
+      "hydrophobic_enabled": false,
+      "van_der_waals_enabled": true,
+      "seed": 9310004,
+      "config": "configs/runs/article_force_confirmatory_C30_E1_H0_seed_9310004.json"
+    },
+    {
+      "run_id": "article_force_confirmatory_C30_E0_H1_seed_9310004",
+      "config_sha256": "37f093ff333dc3ffa4f836c49e6daefb71084039b868bc42814d80dd6418400f",
+      "electrostatic_enabled": false,
+      "hydrophobic_enabled": true,
+      "van_der_waals_enabled": true,
+      "seed": 9310004,
+      "config": "configs/runs/article_force_confirmatory_C30_E0_H1_seed_9310004.json"
+    },
+    {
+      "run_id": "article_force_confirmatory_C30_E0_H0_seed_9310004",
+      "config_sha256": "c6ca0ef19a4196b925cb17469f0bb3766f26449a57794d0dad7db6fdf63b0584",
+      "electrostatic_enabled": false,
+      "hydrophobic_enabled": false,
+      "van_der_waals_enabled": true,
+      "seed": 9310004,
+      "config": "configs/runs/article_force_confirmatory_C30_E0_H0_seed_9310004.json"
+    }
+  ]
+}
