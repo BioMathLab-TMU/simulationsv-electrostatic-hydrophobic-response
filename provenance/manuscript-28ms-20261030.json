@@ -1,0 +1,23 @@
+{
+  "version": "manuscript-28ms-20261030",
+  "comparison_horizon_ms": 28,
+  "E1H1_continuation_panel_ms": 84,
+  "new_nine_continuations_used": false,
+  "files": [
+    {
+      "path": "manuscript/main.pdf",
+      "sha256": "90c6f499632796f077e355442d00cb44627a8ee4416d4e9c29fda5761967bb9d",
+      "bytes": 478940
+    },
+    {
+      "path": "manuscript/S1_Text.pdf",
+      "sha256": "91bb67fd32b2367fc0993a871b7eb16de9331f103904f13c1abb987eba966442",
+      "bytes": 151632
+    },
+    {
+      "path": "manuscript/S1_Data.zip",
+      "sha256": "2e158a877653c670daef7a97227fe41308210bda17df25194e99ed67b72221d7",
+      "bytes": 1448011
+    }
+  ]
+}
