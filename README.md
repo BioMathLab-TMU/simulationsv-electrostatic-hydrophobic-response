@@ -3,7 +3,7 @@
 Article-specific reproducibility materials from the Biomathematics Laboratory,
 Tarbiat Modares University. This repository supports the study
 **Electrostatic-hydrophobic cooperation in the mesoscale assembly of synapsin
-and synaptic vesicles** by Shokoofeh Akbari, Yousef Jamali, and Oleg Shupliakov.
+and synaptic vesicles** by Shokoofeh Akbari, Oleg Shupliakov, and Yousef Jamali.
 
 Repository: https://github.com/BioMathLab-TMU/simulationsv-electrostatic-hydrophobic-response
 
@@ -11,7 +11,35 @@ This is a code/data release for a research manuscript, not a claim of journal
 acceptance. Results concern **finite-time structural organization in the
 implemented model**, not established equilibrium or thermodynamic LLPS.
 
-## Study and released data
+## Common 84-ms manuscript revision
+
+All four force conditions now have three trajectories at a common 84-ms
+horizon. Each trajectory has 600 unique saved frames at 0.14-ms spacing.
+The current structural summaries use the final 180 frames (58.94--84 ms).
+The earlier 28-ms results remain unchanged in the original data locations.
+The two horizons are repeated observations of the same trajectories.
+
+Current inputs: `data/raw/common84ms/`, with SHA-256 hashes and selected-field
+definitions in `data/common84ms_availability.json`. Included position,
+identity, species and radius arrays preserve every stored value exactly.
+Original complete raw outputs remain preserved separately. The 12 new
+analysis-input files total approximately 326 MB. Machine provenance and RNG
+states are excluded from this public subset.
+
+Current numerical results: `data/processed/common84ms/`.
+Reviewed PDFs and supporting numerical data: `manuscript/`.
+No personal reports, cover letters or material from other articles is included.
+
+```bash
+python analysis/common84ms.py --output results/common84ms --verify
+python scripts/render_common84ms.py --results data/processed/common84ms --reference data/external/hoffmann_mobility_reference.json --output figures
+```
+
+Version `manuscript-84ms-20261030` identifies this revision. The previous PDF
+is preserved by tag `manuscript-28ms-20261030`; release `v1.0.0` retains the
+original 28-ms code/data package. The sections below describe that release.
+
+## Original 28-ms study and released data
 
 - Fixed 2 x 2 electrostatic (E) / hydrophobic (H) design; van der Waals
   interactions remain enabled in all four conditions.
@@ -46,7 +74,7 @@ are recorded in the manifests.
 | provenance/ | Source/data checksums, release inventory and tested environment |
 | tests/ | Unit, geometry, data-integrity and statistical-contract tests |
 
-No personal project reports, other-study data, manuscript drafts, cover letters,
+No personal project reports, other-study data, unpublished drafts, cover letters,
 private writing history or machine-specific build folders are part of this release.
 
 ## Reproduce the analysis without running new simulations

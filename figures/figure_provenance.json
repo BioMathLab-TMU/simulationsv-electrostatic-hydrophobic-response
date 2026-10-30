@@ -1,8 +1,12 @@
 {
-  "font": "Arial",
-  "font_resolved": "arial_0.ttf",
-  "font_size_pt": 10,
-  "width_inches_max": 7.5,
+  "comparison_horizon_ms": 84,
+  "independent_seeds": 3,
+  "late_window_ms": [
+    58.94,
+    84
+  ],
+  "late_frames": 180,
+  "errors": "between-seed SD",
   "tiff_dpi": 600,
   "compression": "LZW",
   "palette": {
@@ -11,7 +15,5 @@
     "E1H0": "#2A9D8F",
     "E1H1": "#195E56"
   },
-  "independent_replicates_per_arm": 3,
-  "errors": "between-seed SD",
-  "nominal_Syn_D_um2_s": 0.16340925911060092
+  "smoothing": "none"
 }

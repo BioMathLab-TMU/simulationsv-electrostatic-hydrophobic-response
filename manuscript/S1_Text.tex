@@ -1,0 +1,234 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,booktabs,tabularx,hyperref,xurl}
+\hypersetup{hidelinks,pdfauthor={Shokoofeh Akbari, Oleg Shupliakov, Yousef Jamali}}
+\begin{document}
+\begin{center}
+{\Large\bfseries S1 Text. Supporting methods and numerical results}\par
+\medskip
+Electrostatic--hydrophobic cooperation in the mesoscale assembly of synapsin and synaptic vesicles\par
+\medskip
+Shokoofeh Akbari, Oleg Shupliakov, and Yousef Jamali
+\end{center}
+\section*{S1. Design and structural observables}
+The factorial design contains four E/H conditions and three seed blocks,
+9310002--9310004. Each trajectory has 200 SVs and 1,807 Syn agents in a
+spherical compartment of volume $0.1\,\mu\mathrm m^3$. All trajectories
+were followed to 84 ms at a fixed integration step of 0.0007 ms.
+Van der Waals interactions remain enabled in every condition.
+The 600 unique saved frames are separated by 0.14 ms. Continuations
+retain the same physical parameters and saved random state; identical
+checkpoint frames are counted once.
+
+The principal 84-ms summaries average frames 421--600 (58.94--84 ms)
+within each trajectory, followed by a mean and sample SD across seeds.
+The earlier 28-ms summaries use frames 141--200 (19.74--28 ms).
+Both apply the same final-30\% rule. Each trajectory is one independent
+replicate. The two horizons are repeated observations of the same runs.
+
+The association graph uses $\|x_i-x_j\|\leq a_i+a_j+2\,\mathrm{nm}$,
+where $a_i$ is the outer radius. $L$ is the all-agent largest-component
+fraction, $Q_{\rm Syn}$ is the non-isolated Syn fraction and $L_{\rm SV}$
+is the fraction of all SVs in the component selected by total agent count.
+Non-isolated Syn includes Syn--Syn groups and Syn--SV associations.
+The original machine-readable column ``synapsin\_recruited\_fraction''
+and the updated column ``syn\_nonisolated\_fraction'' both mean $Q_{\rm Syn}$.
+
+\section*{S2. Complete per-run structural observables at 84 ms}
+\begin{center}\small
+\begin{tabular}{llrrrr}
+\toprule
+Condition & Seed & $L$ & $Q_{\rm Syn}$ & $L_{\rm SV}$ & Drift-limited \\ \midrule
+E0H0 & 9310002 & 0.027675 & 0.318434 & 0.084889 & 0.000001 \\
+E0H0 & 9310003 & 0.054091 & 0.319935 & 0.171139 & 0.000000 \\
+E0H0 & 9310004 & 0.028647 & 0.313272 & 0.086889 & 0.000000 \\
+E0H1 & 9310002 & 0.337812 & 0.560004 & 0.545417 & 0.001161 \\
+E0H1 & 9310003 & 0.413553 & 0.592714 & 0.587556 & 0.002336 \\
+E0H1 & 9310004 & 0.280632 & 0.550593 & 0.435806 & 0.001121 \\
+E1H0 & 9310002 & 0.445244 & 0.759017 & 0.484389 & 0.000000 \\
+E1H0 & 9310003 & 0.599812 & 0.779850 & 0.616083 & 0.000000 \\
+E1H0 & 9310004 & 0.462299 & 0.752702 & 0.496528 & 0.000000 \\
+E1H1 & 9310002 & 0.921386 & 0.953849 & 0.908056 & 0.005209 \\
+E1H1 & 9310003 & 0.912982 & 0.949324 & 0.868333 & 0.005391 \\
+E1H1 & 9310004 & 0.925491 & 0.951593 & 0.896361 & 0.005518 \\
+\bottomrule\end{tabular}\end{center}
+The final column gives the whole-84-ms mean fraction of particle updates
+affected by the deterministic drift limiter, weighted by integration
+steps across segments. Brownian increments are retained in full.
+All segments completed with finite positions and no unconverged
+projection steps at the original 0.005-nm residual tolerance.
+\clearpage
+\section*{S3. Paired interaction contrasts at both horizons}
+The contrast is $I_s=Y_{11,s}-Y_{10,s}-Y_{01,s}+Y_{00,s}$.
+The following table retains every seed and each structural observable.
+\begin{center}\small
+\begin{tabular}{llrrr}
+\toprule
+Horizon (ms) & Seed & $I_L$ & $I_{Q_{\rm Syn}}$ & $I_{L_{\rm SV}}$ \\ \midrule
+28 & 9310002 & 0.359043 & -0.029266 & 0.380500 \\
+28 & 9310003 & 0.313237 & -0.031452 & 0.307500 \\
+28 & 9310004 & 0.444503 & -0.026075 & 0.455250 \\
+84 & 9310002 & 0.166005 & -0.046738 & -0.036861 \\
+84 & 9310003 & -0.046291 & -0.103305 & -0.164167 \\
+84 & 9310004 & 0.211208 & -0.038431 & 0.050917 \\
+\bottomrule\end{tabular}\end{center}
+At 84 ms, the mean $I_L$ is 0.110307, with between-seed SD 0.137488. The approximate 95\% paired Student-$t$ interval is [-0.231233, 0.451848].
+
+The main text uses paired differences and sample SDs. There are three
+seed blocks and two degrees of freedom for paired intervals. Normality
+of seed differences is difficult to assess with three blocks. The
+full-precision conditional contrasts are retained in S1 Data. The
+original 28-ms statistical audit remains a historical analysis of that
+horizon and is stored separately from the 84-ms tables.
+
+\section*{S4. Association-shell sensitivity at 84 ms}
+Only the graph threshold changes; trajectories and forces are fixed.
+Entries are means of three per-run late-window means.
+\begin{center}\small
+\begin{tabular}{lrrr}
+\toprule
+Condition & Shell (nm) & $L$ & $L_{\rm SV}$ \\ \midrule
+E0H0 & 0 & 0.018471 & 0.070759 \\
+E0H0 & 2 & 0.036805 & 0.114306 \\
+E0H0 & 4 & 0.073231 & 0.193611 \\
+E0H0 & 6 & 0.143276 & 0.328630 \\
+E0H1 & 0 & 0.257311 & 0.402796 \\
+E0H1 & 2 & 0.343999 & 0.522926 \\
+E0H1 & 4 & 0.411524 & 0.614833 \\
+E0H1 & 6 & 0.473130 & 0.692194 \\
+E1H0 & 0 & 0.346878 & 0.363213 \\
+E1H0 & 2 & 0.502452 & 0.532333 \\
+E1H0 & 4 & 0.596171 & 0.644713 \\
+E1H0 & 6 & 0.666221 & 0.730852 \\
+E1H1 & 0 & 0.887193 & 0.857648 \\
+E1H1 & 2 & 0.919953 & 0.890917 \\
+E1H1 & 4 & 0.929835 & 0.909870 \\
+E1H1 & 6 & 0.938186 & 0.927667 \\
+\bottomrule\end{tabular}\end{center}
+\clearpage
+\section*{S5. Species-resolved contact analysis at 84 ms}
+For each Syn agent $i$, the SV-neighbor count is
+\[
+d_i^{\rm SV}=\sum_{j\in\mathcal V}\mathbf1\{\|x_i-x_j\|\leq a_i+a_j+2\,\mathrm{nm}\}.
+\]
+The two Syn fractions count $d_i^{\rm SV}\geq1$ and $d_i^{\rm SV}\geq2$,
+respectively, divided by $N_{\rm Syn}$. Reciprocal SV coverage counts
+SVs with at least one Syn neighbor, divided by $N_{\rm SV}$.
+The same threshold is applied to every condition. Values are averages
+over 58.94--84 ms within each run.
+\begin{center}\small
+\begin{tabular}{llrrr}
+\toprule
+Condition & Seed & Syn: $\geq1$ SV & Syn: $\geq2$ SV & SV: $\geq1$ Syn \\ \midrule
+E0H0 & 9310002 & 0.191407 & 0.012384 & 0.805500 \\
+E0H0 & 9310003 & 0.191063 & 0.013552 & 0.810472 \\
+E0H0 & 9310004 & 0.189341 & 0.012141 & 0.814444 \\
+E0H1 & 9310002 & 0.454052 & 0.124909 & 0.957778 \\
+E0H1 & 9310003 & 0.501024 & 0.192194 & 0.950778 \\
+E0H1 & 9310004 & 0.438929 & 0.119185 & 0.952000 \\
+E1H0 & 9310002 & 0.745207 & 0.193448 & 0.993083 \\
+E1H0 & 9310003 & 0.768591 & 0.253127 & 0.988639 \\
+E1H0 & 9310004 & 0.738695 & 0.182454 & 0.992444 \\
+E1H1 & 9310002 & 0.951928 & 0.664957 & 0.984139 \\
+E1H1 & 9310003 & 0.947703 & 0.676736 & 0.975222 \\
+E1H1 & 9310004 & 0.949920 & 0.664690 & 0.983000 \\
+\bottomrule\end{tabular}\end{center}
+Mean unordered edge counts per snapshot:
+\begin{center}\small
+\begin{tabular}{llrrr}
+\toprule
+Condition & Seed & Syn--Syn & Syn--SV & SV--SV \\ \midrule
+E0H0 & 9310002 & 157.572 & 368.650 & 105.744 \\
+E0H0 & 9310003 & 159.033 & 370.122 & 122.639 \\
+E0H0 & 9310004 & 151.844 & 364.400 & 102.083 \\
+E0H1 & 9310002 & 398.800 & 1069.344 & 179.533 \\
+E0H1 & 9310003 & 610.489 & 1321.411 & 208.717 \\
+E0H1 & 9310004 & 398.356 & 1031.139 & 164.022 \\
+E1H0 & 9310002 & 296.000 & 1696.178 & 28.694 \\
+E1H0 & 9310003 & 366.533 & 1846.317 & 39.150 \\
+E1H0 & 9310004 & 281.094 & 1664.517 & 27.378 \\
+E1H1 & 9310002 & 1331.250 & 2982.600 & 126.700 \\
+E1H1 & 9310003 & 1390.100 & 3020.233 & 132.522 \\
+E1H1 & 9310004 & 1396.917 & 2953.311 & 125.256 \\
+\bottomrule\end{tabular}\end{center}
+\clearpage
+\section*{S6. Short-lag mobility and experimental scale reference}
+Syn positions are projected onto $xy$, converted from nm to $\mu$m,
+and fitted using per-agent time-averaged MSD with a free intercept over
+native lags 2.10--3.92 ms (14 lag points). The apparent coefficient is
+slope/4 in $\mu\mathrm m^2/\mathrm s$. Negative fitted slopes are retained.
+The full 600-frame trajectory is used for the main figure. The final
+180 frames provide a window-sensitivity comparison.
+\begin{center}\small
+\begin{tabular}{llrrrr}
+\toprule
+Condition & Seed & $D$: full & $D$: late & Negative: full & Negative: late \\ \midrule
+E0H0 & 9310002 & 0.141098 & 0.143295 & 0.0000 & 0.0033 \\
+E0H0 & 9310003 & 0.140255 & 0.137813 & 0.0000 & 0.0033 \\
+E0H0 & 9310004 & 0.139690 & 0.139443 & 0.0000 & 0.0050 \\
+E0H1 & 9310002 & 0.131435 & 0.129700 & 0.0000 & 0.0039 \\
+E0H1 & 9310003 & 0.129508 & 0.122338 & 0.0000 & 0.0017 \\
+E0H1 & 9310004 & 0.131327 & 0.128424 & 0.0000 & 0.0022 \\
+E1H0 & 9310002 & 0.110672 & 0.108970 & 0.0000 & 0.0033 \\
+E1H0 & 9310003 & 0.110623 & 0.104226 & 0.0000 & 0.0061 \\
+E1H0 & 9310004 & 0.110988 & 0.107553 & 0.0000 & 0.0061 \\
+E1H1 & 9310002 & 0.062747 & 0.055275 & 0.0000 & 0.0100 \\
+E1H1 & 9310003 & 0.063020 & 0.053947 & 0.0000 & 0.0083 \\
+E1H1 & 9310004 & 0.062057 & 0.055238 & 0.0006 & 0.0188 \\
+\bottomrule\end{tabular}\end{center}
+Hoffmann et al. (Nature Communications 2023, DOI
+\href{https://doi.org/10.1038/s41467-023-42372-6}{10.1038/s41467-023-42372-6})
+provide a Fig. 2h short-time mobility scale: source-data means are
+0.0189192370 with SV and 0.0253090377 without SV, in
+$\mu\mathrm m^2/\mathrm s$. Source data:
+\url{https://doi.org/10.6084/m9.figshare.24179445.v1}.
+Their experiment selects condensate-core tracks at a 1-ms cadence,
+whereas the model analysis includes all Syn at a 0.14-ms saved cadence.
+Simulation positions have no localization error or exposure blur, and
+every model condition contains SV. Effective friction was chosen with
+reference to the literature before this comparison. The comparison provides a mobility scale reference, with higher absolute
+mobility in the model. Experimental uncertainty was not recalculated.
+
+
+\section*{S7. Reproduction and software checks}
+S1 Data contains full-precision inputs for all main figures, per-run
+structural and mobility values, shell comparisons and paired contrasts.
+The original 28-ms tables remain separate. The updated repository adds
+12 common-84-ms analysis-input files, preserving all 600 frames and the
+exact stored values and types of the included arrays. Original raw
+outputs remain preserved separately. The portable script
+\nolinkurl{analysis/common84ms.py} reproduces the new tables, and
+\nolinkurl{scripts/render_common84ms.py} generates the four figures.
+
+Raw-source hashes and exact checkpoint joins were checked, including
+positions, identities, radii and random-number state. Reconstruction of
+the earlier 2,400 frames reproduced the original structural and contact
+tables to absolute tolerance $10^{-12}$. Selected graph calculations
+were checked against all-pairs enumeration. Saved positions and radii
+use float32; one reconstructed overlap residual differed from the
+solver tolerance by $1.52\times10^{-6}$ nm, within its rounding bound.
+The recorded double-precision solver residual remained below 0.005 nm.
+Detailed numerical checks are retained with the analysis data.
+
+\section*{S8. Later assembly trends}
+For each trajectory, a straight line was fitted to $L$ within each
+14-ms period. Entries are means of three per-run means and slopes.
+The periods below show the later development of each condition.
+\begin{center}\small
+\begin{tabular}{llrr}
+\toprule
+Condition & Period (ms) & Mean $L$ & Slope (ms$^{-1}$) \\ \midrule
+E0H0 & 42--56 & 0.031581 & 0.000520 \\
+E0H0 & 56--70 & 0.040241 & -0.000322 \\
+E0H0 & 70--84 & 0.034406 & -0.000352 \\
+E0H1 & 42--56 & 0.191023 & 0.003080 \\
+E0H1 & 56--70 & 0.297030 & 0.008990 \\
+E0H1 & 70--84 & 0.370037 & 0.005398 \\
+E1H0 & 42--56 & 0.318683 & 0.007319 \\
+E1H0 & 56--70 & 0.423941 & 0.006971 \\
+E1H0 & 70--84 & 0.560191 & 0.006058 \\
+E1H1 & 42--56 & 0.831795 & 0.008818 \\
+E1H1 & 56--70 & 0.910580 & 0.001990 \\
+E1H1 & 70--84 & 0.925225 & 0.000381 \\
+\bottomrule\end{tabular}\end{center}
+\end{document}

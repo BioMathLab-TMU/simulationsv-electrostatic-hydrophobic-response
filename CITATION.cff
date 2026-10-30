@@ -2,19 +2,19 @@ cff-version: 1.2.0
 message: "Cite these reproducibility materials and the associated article when available. Identify the exact release tag or commit."
 title: "SimulationSV electrostatic-hydrophobic response: reproducibility materials"
 type: software
-version: 1.0.0
-date-released: 2026-10-08
+version: manuscript-84ms-20261030
+date-released: 2026-10-30
 authors:
   - family-names: Akbari
     given-names: Shokoofeh
     affiliation: "Department of Applied Mathematics, School of Mathematical Sciences, Tarbiat Modares University, Tehran, Iran"
+  - family-names: Shupliakov
+    given-names: Oleg
+    affiliation: "Department of Neuroscience, Karolinska Institutet, Stockholm, Sweden"
   - family-names: Jamali
     given-names: Yousef
     orcid: "https://orcid.org/0000-0002-5709-3821"
     affiliation: "Department of Applied Mathematics, School of Mathematical Sciences, Tarbiat Modares University, Tehran, Iran"
-  - family-names: Shupliakov
-    given-names: Oleg
-    affiliation: "Department of Neuroscience, Karolinska Institutet, Stockholm, Sweden"
 repository-code: "https://github.com/BioMathLab-TMU/simulationsv-electrostatic-hydrophobic-response"
 license: MIT
 keywords:
